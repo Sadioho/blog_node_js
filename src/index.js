@@ -18,7 +18,7 @@ app.get("/news", function (req, res) {
 });
 
 app.get("/search", function (req, res) {
-  console.log(req.query.q);
+  // console.log(req.query.q);
   res.render("search");
 });
 

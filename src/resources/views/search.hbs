@@ -1,1 +1,17 @@
-<h1>Search</h1>
+<div class="mt-5">
+  {{! action là submit cho thằng URL nào  action="/news"}}
+  <form method="GET">
+    <div class="form-group">
+      <label for="search-input">Từ khóa</label>
+      <input
+        type="text"
+        class="form-control"
+        id="search-input"
+        placeholder="Nhập từ khóa..."
+        name="q"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+  </form>
+</div>
