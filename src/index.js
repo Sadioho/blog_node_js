@@ -5,6 +5,9 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
+// file static
+app.use(express.static(path.join(__dirname, "public")));
+
 //HTTP logger
 app.get("/", function (req, res) {
   res.render("home");
