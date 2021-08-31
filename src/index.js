@@ -17,6 +17,11 @@ app.get("/news", function (req, res) {
   res.render("news");
 });
 
+app.get("/search", function (req, res) {
+  console.log(req.query.q);
+  res.render("search");
+});
+
 //template engine
 app.engine(
   "hbs",
