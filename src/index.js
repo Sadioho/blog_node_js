@@ -8,6 +8,11 @@ const port = 3000;
 // file static
 app.use(express.static(path.join(__dirname, "public")));
 
+//middle ware
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 //HTTP logger
 app.get("/", function (req, res) {
   res.render("home");
@@ -20,6 +25,11 @@ app.get("/news", function (req, res) {
 app.get("/search", function (req, res) {
   // console.log(req.query.q);
   res.render("search");
+});
+
+app.post("/search", function (req, res) {
+  console.log(req.body);
+  res.send("");
 });
 
 //template engine
