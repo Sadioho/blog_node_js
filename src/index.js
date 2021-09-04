@@ -4,7 +4,7 @@ const handlebars = require('express-handlebars');
 const path = require('path');
 const app = express();
 const port = 3000;
-
+const methodOverride = require('method-override');
 const route = require('./routes');
 const db = require('./config/db');
 
@@ -15,6 +15,8 @@ db.connect();
 app.use(express.static(path.join(__dirname, 'public')));
 
 //middle ware
+//post=> put middleware
+app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -25,6 +27,9 @@ app.engine(
   'hbs',
   handlebars({
     extname: '.hbs',
+    helpers: {
+      sum: (a, b) => a + b,
+    },
   })
 );
 app.set('view engine', 'hbs');

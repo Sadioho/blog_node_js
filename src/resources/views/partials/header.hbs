@@ -1,26 +1,48 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">F8 NODE JS EXPRESS</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home
-          <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/courses/create">Thêm khóa học</a>
-      </li>
-    </ul>
+<nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+  <div class='container'>
+    <a class='navbar-brand' href='/'>F8 NODE JS EXPRESS</a>
+    <button
+      class='navbar-toggler'
+      type='button'
+      data-toggle='collapse'
+      data-target='#navbarSupportedContent'
+      aria-controls='navbarSupportedContent'
+      aria-expanded='false'
+      aria-label='Toggle navigation'
+    >
+      <span class='navbar-toggler-icon'></span>
+    </button>
+    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+      <ul class='navbar-nav ml-auto'>
+        <li class='nav-item dropdown'>
+          <a
+            class='nav-link dropdown-toggle'
+            href='#'
+            id='navbarDropdownMenuLink'
+            data-toggle='dropdown'
+            aria-haspopup='true'
+            aria-expanded='false'
+          >
+            <img
+              src='https://scontent-sin6-1.xx.fbcdn.net/v/t1.6435-9/218967095_1181467678985441_6383685521057190224_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=G1_mwimBgI0AX_fz-5B&_nc_ht=scontent-sin6-1.xx&oh=84df19472876be888bcc1ce3302aa6a4&oe=6156B31D'
+              alt=''
+              class='image-user'
+            />
+            DANNY
+          </a>
+          <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+            <a class='dropdown-item' href='/courses/create'>Thêm khóa học</a>
+            <div class='dropdown-divider'></div>
+            <a class='dropdown-item' href='/me/stored/courses'>Khóa học của tôi</a>
+            <a class='dropdown-item' href='/me/stored/news'>Bài viết của tôi
+            </a>
+            <div class='dropdown-divider'></div>
+            <a class='dropdown-item' href='/'>Đăng xuất</a>
+          </div>
+        </li>
 
+      </ul>
+
+    </div>
   </div>
 </nav>
