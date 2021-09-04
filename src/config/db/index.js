@@ -9,7 +9,7 @@ async function connect() {
     console.log('connect successfully');
   } catch (error) {
     console.log(error);
-    console.log("failure");
+    console.log('failure');
   }
 }
 module.exports = { connect };
